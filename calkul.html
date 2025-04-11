@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="UTF-8">
+        <title>Calculator css</title>
+    </header>
+    <body>
+        <h1>Calculator</h1>
+        <form name="canculator">
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" name="display" id="display" placeholder="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="yetti" value="7" onclick="canculator.display.value += '7' "></td>
+                    <td><input type="button" name="sakiz" value="8" onclick="canculator.display.value += '8' "></td>
+                    <td><input type="button" name="to'qiz" value="9" onclick="canculator.display.value += '9' "></td>
+                    <td><input type="button" name="ko'paytirish" class="operator" value="x" onclick="canculator.display.value += '*' "></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="to'rt" value="4" onclick="canculator.display.value += '4' "></td>
+                    <td><input type="button" name="besh" value="5" onclick="canculator.display.value += '5' "></td>
+                    <td><input type="button" name="olti" value="6" onclick="canculator.display.value += '6' "></td>
+                    <td><input type="button" name="bo'lish" class="operator" value="/" onclick="canculator.display.value += '/' "></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="bir" value="1" onclick="canculator.display.value += '1' "></td>
+                    <td><input type="button" name="ikki" value="2" onclick="canculator.display.value += '2' "></td>
+                    <td><input type="button" name="uch" value="3" onclick="canculator.display.value += '3' "></td>
+                    <td><input type="button" name="qo'shish" class="operator" value="+" onclick="canculator.display.value += '+' "></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="o'chirish" value="c" onclick="canculator.display.value = '' "></td>
+                    <td><input type="button" name="nol" value="0" onclick="canculator.display.value += '0' "></td>
+                    <td><input type="button" name="tenglik" value="=" onclick="canculator.display.value = eval(canculator.display.value)"></td>
+                    <td><input type="button" name="ayirish" class="operator" value="-" onclick="canculator.display.value += '-' "></td>
+                </tr>
+            </table>
+        </form>
+
+
+        <style>
+            body{
+    padding: 0;
+    margin: 0;
+    background-color:blue;
+}
+h1{
+    width: 1266px;
+    text-align: center;
+    color: rgb(207, 207, 207);
+    font-size: 3em;
+}
+form{
+    margin-left: 35vw;
+    margin-top: 10vh;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    background-color: rgb(10, 0, 46);
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px 2px rgba(148, 148, 148, .1);
+}
+table{
+    padding: 5% 10px;
+}
+#display{
+    margin: 15px 10px ;
+    padding: 10px 4px;
+    font-size: 28px;
+    width: 250px;
+    color: rgb(162, 162, 162);
+    border-radius: 10px;
+    background-color: rgb(10, 0, 46);
+}
+input{
+    outline: none;
+}
+
+
+input[type="button"]{
+font-family: sans-serif;
+padding: 0;
+width: 65px;
+height: 65px;
+font-size: 28px;
+background-color: rgb(10, 0, 46);
+color: #c4c4c4;
+opacity: .8;
+border: none;
+border-radius: 50%;
+box-shadow: 5px 5px 15px 2px rgba(148, 148, 148, .1);
+}
+
+input[type="button"]:hover{
+    color: rgb(0, 244, 252);
+    box-shadow: 5px 5px 15px 2px rgba(255, 10, 10, 0.4);
+    background-color: rgb(35, 0, 163);
+    background: rgb(2, 0, 36);
+
+}
+        </style>
+    </body>
+</html>
